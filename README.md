@@ -4,26 +4,19 @@ This is my GitHub profile README. Below is a recent open-source contribution I m
 
 ## Recent contribution
 
-**fix(editor): treat missing write capability as editable**
-Contributed author on PR [Acode-Foundation/Acode#2853](https://github.com/Acode-Foundation/Acode/pull/2853) — merged 2026-09-03
+fix(editor): treat missing write capability as editable — Contributed author on PR [Acode-Foundation/Acode#2853](https://github.com/Acode-Foundation/Acode/pull/2853) (merged 2026-09-03)
 
-What I changed
-- Fixed file-read/write detection so files without an explicit write flag are treated as editable.
-- Improved search progress handling to avoid showing 100% before completion.
+Summary
+- Ensured files with a missing canWrite flag are treated as editable to avoid incorrect read-only state.
+- Improved search progress reporting: cap progress while running and set to 100% on completion.
 
 Files changed: 2 — +4 / −3
 
-File attributions
-- src/lib/openFile.js
-  - Original / main source: Ajit Kumar (deadlyjack) — https://github.com/deadlyjack
-  - Finished / recent contributor for this change: Raunak Raj (bajrangCoder) — https://github.com/bajrangCoder
+Attribution
+- src/lib/openFile.js — original: Ajit Kumar (deadlyjack); recent change: Raunak Raj (bajrangCoder)
+- src/sidebarApps/searchInFiles/index.js — original: Ajit Kumar (deadlyjack); recent change: Raunak Raj (bajrangCoder)
 
-- src/sidebarApps/searchInFiles/index.js
-  - Original / main source: Ajit Kumar (deadlyjack) — https://github.com/deadlyjack
-  - Finished / recent contributor for this change: Raunak Raj (bajrangCoder) — https://github.com/bajrangCoder
-
-Key change (robust read-only check):
-
+Key snippet
 ```js
 // before
 const readOnly = fileInfo.canWrite ? false : true;
@@ -33,8 +26,8 @@ const readOnly = fileInfo.canWrite === false;
 
 Link: https://github.com/Acode-Foundation/Acode/pull/2853
 
-Impact: prevents incorrectly marking files as read-only when write capability is missing; improves UX for editor and search progress.
+Impact: prevents false read-only states and improves editor and search UX.
 
 ---
 
-If you want this written in a different tone (shorter, more formal, or more technical), tell me and I’ll update it.
+If you want a different tone or more details (commit SHAs, links to commits, or a screenshot), tell me and I’ll update the README.
