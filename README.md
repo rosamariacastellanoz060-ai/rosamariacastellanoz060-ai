@@ -13,8 +13,8 @@ Summary
 Files changed: 2 — +4 / −3
 
 Attribution
-- src/lib/openFile.js — original: Ajit Kumar (deadlyjack); recent change: Raunak Raj (bajrangCoder)
-- src/sidebarApps/searchInFiles/index.js — original: Ajit Kumar (deadlyjack); recent change: Raunak Raj (bajrangCoder)
+- src/lib/openFile.js — original: Ajit Kumar (deadlyjack); recent change: Raunak Raj (bajrangCoder) — commits: [75e3676](https://github.com/Acode-Foundation/Acode/commit/75e3676027229d3d78aa7e601c6e1a25c0038302), [bfa0f05](https://github.com/Acode-Foundation/Acode/commit/bfa0f055c35d7820cfe1abf02c3f12084b7f9379)
+- src/sidebarApps/searchInFiles/index.js — original: Ajit Kumar (deadlyjack); recent change: Raunak Raj (bajrangCoder) — commits: [75e3676](https://github.com/Acode-Foundation/Acode/commit/75e3676027229d3d78aa7e601c6e1a25c0038302), [bfa0f05](https://github.com/Acode-Foundation/Acode/commit/bfa0f055c35d7820cfe1abf02c3f12084b7f9379)
 
 Key snippet
 ```js
@@ -30,4 +30,4 @@ Impact: prevents false read-only states and improves editor and search UX.
 
 ---
 
-If you want a different tone or more details (commit SHAs, links to commits, or a screenshot), tell me and I’ll update the README.
+If you want a different tone or more details (commit SHAs inline, links to commits, or a screenshot), tell me and I’ll update the README.
